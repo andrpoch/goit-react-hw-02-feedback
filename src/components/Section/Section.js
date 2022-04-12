@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 function Section({ title, children }) {
    return (
       <section className={s.section}>
-         <h2 className={s.title}>{title}</h2>
-         {children}
+         <h2>{title}</h2>
+         <div className={s.wrapper}>{children}</div>
       </section>
    )
 }

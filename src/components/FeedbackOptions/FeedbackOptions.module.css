@@ -1,0 +1,24 @@
+.button{
+   display: flex;
+   padding: 5px 10px;
+   margin-right: 10px;
+   text-transform: uppercase;
+border: 1px solid  grey;
+color: grey;
+font-size: 20px;
+}
+.button:last-child{
+   margin-right: 0px;
+}
+.button:first-child:hover{
+   background-color: green;
+   color:aliceblue;
+}
+.button:hover{
+background-color: grey;
+color: black;
+}
+.button:last-child:hover{
+   background-color: red;
+   color:aliceblue;
+}

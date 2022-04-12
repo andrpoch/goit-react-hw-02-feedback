@@ -1,0 +1,9 @@
+.list{
+   list-style: none;
+}
+.item{
+display: flex;
+}
+.text{
+color: black;
+}

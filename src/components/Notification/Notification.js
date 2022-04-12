@@ -1,11 +1,12 @@
- import PropTypes from 'prop-types';
-import s from './Notificationmodule.css';
+import React from 'react';
+import PropTypes from 'prop-types';
+import s from './Notification.module.css';
 
 function Notification ({message}) {
    return (
-      <p
+      <h2
          className={s.text}>{message}
-      </p>);
+      </h2>);
 }
 
 Notification.propTypes = {
