@@ -29,6 +29,7 @@ class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
+    const total = this.countTotalFeedback()
     return (
       <>
     <Section title='Please leave feedback'>
@@ -37,13 +38,13 @@ class App extends Component {
         onClick={this.onLeaveFeedback}>
         </FeedbackOptions>
         </Section>
-           <Section title="Statistic">
-          {this.countTotalFeedback() ? (
+          <Section title="Statistic">
+          {total ? (
             <Statistics
               good={good}
               neutral={neutral}
               bad={bad}
-              total={this.countTotalFeedback()}
+              total={total}
               positivePercentage={this.countPositiveFeedbackPercentage()}
             ></Statistics>
           ) : (
